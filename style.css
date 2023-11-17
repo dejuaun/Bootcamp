@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+:root {
+    --main-color: #443;
+    --border: 3px solid var(--main-color);
+    --border-hover: 3px dashed var(--main-color);
+
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+html {
+    font-size: 63%;
+    overflow-x: hidden;
+    scroll-padding-top: 112;
+    scroll-behavior: smooth;
+}
+
+.btn {
+    display: inline-block;
+    padding: 14px 24px;
+    color: var(--main-color);
+    background: none;
+    border: var(--border);
+    cursor: pointer;
+    margin-top: 16px;
+    font-size: 27px;
+
+}
+
+.btn:hover {
+    border: var(--border-hover);
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    background-color: #fff;
+    box-shadow: 0 8px 16px rgb(0, 0, 0);
+    padding: 32px 9%;
+}
+
+.header .logo {
+    color: var(--main-color);
+    font-size: 37px;
+}
+
+.header .nav-bar a {
+    margin: 0 16px;
+    font-size: 27px;
+    color: var(--main-color);
+}
+
+.section {
+    padding: 32px 9%;
+}
+
+.home {
+    min-height: 100vh;
+    padding-top: 192px;
+}
