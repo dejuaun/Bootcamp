@@ -26,15 +26,26 @@ html {
     scroll-behavior: smooth;
 }
 
-body {
+.bgFade {
     background-image: linear-gradient(white, #EA8F65);
     font-size: 20px;
 }
 
 body p {
     margin: 50px;
+    font-size: 20px;
 
 
+}
+
+@keyframes test {
+    from {
+        background-color: #EA8F65;
+    }
+
+    to {
+        background-color: white;
+    }
 }
 
 .btn {
@@ -48,12 +59,15 @@ body p {
     margin-top: 16px;
     font-size: 27px;
 
+
 }
 
 .btn:hover {
     border-radius: var(--border-radius-hover);
     border: var(--border-hover);
     background-color: #fff;
+    animation-name: test;
+    animation-duration: 2s;
 }
 
 .header {
@@ -133,6 +147,17 @@ body p {
     margin: 50px;
 }
 
+#accordionFlushExample {
+    margin: 90px;
+}
+
+.accordion {
+    background-color: white;
+}
+
+.container p {
+    font-size: 20px;
+}
 
 /* media queries */
 @media (max-width:900px) {
